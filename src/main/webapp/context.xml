@@ -1,0 +1,12 @@
+<Context  path="/postgres">
+   <!-- disables storage of sessions across restarts  
+   <Manager pathname=""/>
+   -->
+   <Resource name="BeanManager" auth="Container"
+		type="javax.enterprise.inject.spi.BeanManager" 
+		factory="org.jboss.weld.resources.ManagerObjectFactory" />
+   <Resource name="jdbc/PostgresqlDS" auth="Container" type="javax.sql.DataSource"
+               maxActive="50" maxIdle="20" maxWait="10000"
+               driverClassName="org.postgresql.Driver"
+               url="jdbc:postgresql://localhost:5432/postgres" username="postgres" password="postgres"/>		
+</Context>

@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+	<h:form>
+ 
+		<p:menubar>
+			<p:menuitem value="Home" icon="ui-icon-home" url="home.xhtml"/>
+			<p:menuitem value="Cadastro" icon="ui-icon-document" url="cadastrarPessoa.xhtml"/>
+			<p:menuitem value="Consulta" icon="ui-icon-document" />
+			<p:menuitem value="Consulta por Carousel" icon="ui-icon-document" />
+			<p:menuitem value="Gráfico tipo Pessoa" icon="ui-icon-document" />
+			<p:menuitem value="Exportar XML Pessoa" icon="ui-icon-document" />
+ 
+ 
+		<f:facet name="options">            
+                    <p:commandButton value="Logout" icon="ui-icon-extlink" action="#{usuarioController.Logout}"/>
+        	</f:facet>
+		</p:menubar>
+ 
+	</h:form>
+ 
+</html>
