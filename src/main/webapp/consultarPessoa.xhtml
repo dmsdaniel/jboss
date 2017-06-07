@@ -22,11 +22,18 @@
         </p:dialog>
 
         <h:form style="margin:auto;margin-left:2%;" id="form-consulta">
+            <h:panelGrid columns="3">
+                <p:inputText value="#{consultarPessoaController.filtro.nome}" id="nome"/>
+
+               <p:commandButton value="Consultar" update="dataTable-registros" process="@form" /> 
+            </h:panelGrid>
 
             <p:dataTable id="dataTable-registros"
                          var="pessoa" 
                          value="#{consultarPessoaController.pessoas}" 
                          rows="15"
+                         lazy="true"
+                         styleClass="table table-hover"
                          paginator="true"
                          paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
                          rowsPerPageTemplate="5,10,15"
@@ -76,10 +83,20 @@
                                      update="dialog-modal-editar"/>
 
                 </p:column>
+                <p:column headerText="" style="width:25px;">
+
+                    <p:commandButton icon="ui-icon-trash" 
+                                     title="Excluir Registro"                        					 
+                                     ajax="true"
+                                     actionListener="#{consultarPessoaController.ExcluirPessoa(pessoa)}"
+                                     update="@form" />
+
+                </p:column>
 
                 <p:column headerText="" style="width:25px;">
 
                 </p:column>
+
 
             </p:dataTable>
 
