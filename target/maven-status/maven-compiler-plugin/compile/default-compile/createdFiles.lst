@@ -1,14 +1,15 @@
 br/com/daniel/repository/entity/PessoaEntity.class
+br/com/daniel/pessoa/controller/ConsultaPessoasBean.class
 br/com/daniel/repository/Pessoas.class
 br/com/daniel/repository/PessoaRepository.class
 br/com/daniel/model/PessoaModel.class
 br/com/daniel/pessoa/controller/ConsultarPessoaController.class
 br/com/daniel/repository/entity/UsuarioEntity.class
 br/com/daniel/repository/FiltroPessoa.class
+br/com/daniel/pessoa/controller/ConsultaPessoasBean$1.class
 br/com/daniel/uteis/Uteis.class
 br/com/daniel/usuario/controller/UsuarioController.class
 br/com/daniel/model/UsuarioModel.class
-br/com/daniel/pessoa/controller/ConsultarPessoaController$1.class
 br/com/daniel/uteis/LocalDateTimeAttributeConverter.class
 br/com/daniel/uteis/LocalDateTimeConverter.class
 br/com/daniel/filters/JPAFilter.class

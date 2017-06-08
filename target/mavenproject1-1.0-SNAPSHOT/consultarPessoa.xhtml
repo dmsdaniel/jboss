@@ -23,14 +23,14 @@
 
         <h:form style="margin:auto;margin-left:2%;" id="form-consulta">
             <h:panelGrid columns="3">
-                <p:inputText value="#{consultarPessoaController.filtro.nome}" id="nome"/>
+                <p:inputText value="#{consultarPessoasBean.filtro.nome}" id="descricao"/>
 
                <p:commandButton value="Consultar" update="dataTable-registros" process="@form" /> 
             </h:panelGrid>
 
             <p:dataTable id="dataTable-registros"
                          var="pessoa" 
-                         value="#{consultarPessoaController.pessoas}" 
+                         value="#{consultarPessoasBean.model}" 
                          rows="15"
                          lazy="true"
                          styleClass="table table-hover"
@@ -69,9 +69,9 @@
                     <h:outputText value="#{pessoa.origemCadastro}" />
                 </p:column>
 
-                <p:column headerText="Usuário">
+                <!-- <p:column headerText="Usuário">
                     <h:outputText value="#{pessoa.usuarioModel.usuario}" />
-                </p:column>
+                </p:column> -->
 
                 <p:column headerText="" style="width:25px;">
 

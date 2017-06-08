@@ -7,6 +7,7 @@
 /home/daniel/NetBeansProjects/WebApplication1/src/main/java/br/com/daniel/usuario/controller/UsuarioController.java
 /home/daniel/NetBeansProjects/WebApplication1/src/main/java/br/com/daniel/pessoa/controller/CadastrarPessoaController.java
 /home/daniel/NetBeansProjects/WebApplication1/src/main/java/br/com/daniel/filters/AutenticacaoFilter.java
+/home/daniel/NetBeansProjects/WebApplication1/src/main/java/br/com/daniel/pessoa/controller/ConsultaPessoasBean.java
 /home/daniel/NetBeansProjects/WebApplication1/src/main/java/br/com/daniel/repository/UsuarioRepository.java
 /home/daniel/NetBeansProjects/WebApplication1/src/main/java/br/com/daniel/repository/entity/UsuarioEntity.java
 /home/daniel/NetBeansProjects/WebApplication1/src/main/java/br/com/daniel/repository/PessoaRepository.java
